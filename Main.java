@@ -1,6 +1,7 @@
 import Bubble_Sort.BubbleSort;
 import Bubble_Sort.PrintArray;
 import Bubble_Sort.RandomizeArray;
+import quickSort.QuickSort;
 
 import java.util.Arrays;
 
@@ -24,5 +25,15 @@ public static void main(String[] args)
     printArray.PrintArray(arrayBubbleSort);
 
     System.out.println("bubbleSort " + (bubbleSort2- bubbleSort1));
+
+
+
+    QuickSort quickSort = new QuickSort();
+    long quickSort1 = System.nanoTime();
+    int[] arrayQuicksort = quickSort.quickSort(arrayRandom,0, arrayRandom.length -1);
+    long quickSort2 = System.nanoTime();
+
+    printArray.PrintArray(arrayQuicksort);
+    System.out.println("quickSort " + (quickSort2- quickSort1));
 }
 }
