@@ -1,16 +1,10 @@
-package Bubble_Sort;
+package Service;
 
 import java.sql.SQLOutput;
 import java.util.Random;
 
 public class RandomizeArray
 {
-//    private int[] array;
-//    public RandomizeArray(int[] array)
-//    {
-//        this.array = array;
-//    }
-
     public int[] randomizeArray(int[] array)
     {
 
